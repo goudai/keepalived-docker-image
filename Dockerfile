@@ -12,6 +12,7 @@ RUN echo "" > /etc/apk/repositories \
 && apk --update -t --no-cache add keepalived iproute2 grep bash  sed \
 && rm -rf /var/cache/apk/* \
 && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+&& chmod +x /usr/bin/keepalived.sh
 
 
 
