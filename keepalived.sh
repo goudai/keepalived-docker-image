@@ -9,8 +9,9 @@
 /bin/sed -i "s/{{CHECK_PORT}}/${CHECK_PORT}/g" /etc/keepalived/keepalived.conf
 /bin/sed -i "s/{{VRID}}/${VRID}/g" /etc/keepalived/keepalived.conf
 /bin/sed -i "s/{{INTERFACE}}/${INTERFACE}/g" /etc/keepalived/keepalived.conf
-/bin/sed -i "s/{{HOST_IP}}/${HOST_IP}/g" /etc/keepalived/keepalived.conf
-/bin/sed -i "s/{{DEST_IP}}/${DEST_IP}/g" /etc/keepalived/keepalived.conf
+/bin/sed -i "s/{{HOST_IP1}}/${HOST_IP1}/g" /etc/keepalived/keepalived.conf
+/bin/sed -i "s/{{HOST_IP2}}/${HOST_IP2}/g" /etc/keepalived/keepalived.conf
+/bin/sed -i "s/{{HOST_IP3}}/${HOST_IP3}/g" /etc/keepalived/keepalived.conf
 
 # Make sure we react to these signals by running stop() when we see them - for clean shutdown
 # And then exiting
