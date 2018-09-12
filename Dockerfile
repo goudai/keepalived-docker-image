@@ -14,6 +14,4 @@ RUN echo "" > /etc/apk/repositories \
 && ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone \
 && chmod +x /usr/bin/keepalived.sh
 
-
-
 ENTRYPOINT ["/usr/bin/keepalived.sh"]
